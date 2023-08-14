@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Metacoders</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+</head>
+<body>
+    <a-asset>
+        <img id="Roof" src="Asset/HD-wallpaper-assorted-ceiling-lights.jpg">
+        <img id="asky" src="Asset/space.jpg">
+        <img id="Photo" src="Asset/Butterfly.jpg">
+        <img id="namep" src="Asset/logo.jpeg"> 
+        <img id="groundt" src="Asset/TexturesCom_Wood_ParquetFiveFinger_2K_albedo.jpg">
+        <img id="wallt" src="Asset/Wall(2).jpg">
+        <img id="men3" src="Asset/Logo STEAMEDU Reg bold.png">
+        <img id="mem1" src="Asset/Medhavi.jpg">
+        <img id="mem2" src="Asset/Labanti.JPG">
+        <img id="mem3" src="Asset/Aarushi.jpg">
+        <img id="pre1" src="Asset/Pre1.jpg">
+        <img id="pre2" src="Asset/Pre2.jpg">
+        <img id="pre3" src="Asset/Pre3.jpg">
+        <img id="pre4" src="Asset/Pre4.jpg">
+        <a-asset-item id="Sofa" src="Asset/Sofa/scene.gltf"></a-asset-item>
+
+        <video id="DemoVideo" autoplay loop="true" src="Asset/DemoVideo.mp4"></video>
+    </a-asset>
+
+    <a-scene>
+        <a-sky src="#asky"></a-sky>
+        <a-box height="1" width="30" depth="30" position="0 10 0" scale="1 1 1" src="#Roof" shadow="true"></a-box>
+
+        <a-plane height="2" width="3" depth="10" position="3 5 .3" rotation="0 0 0" scale="1 1 1" src="#namep"></a-plane>
+
+        <a-entity position="14.90762 -0.25895 -6.75445" rotation="0 90 0">
+            <a-plane height="6" width="8" depth="10" position="0 6 -19.6" src="#Photo" material="" geometry="">
+            </a-plane>
+        
+            <a-text value="ABOUT THE PROJECT" scale="4 4 2" position="-4.146 2.089 -19.6" text=""></a-text>
+        
+            <a-plane height="4.5" width="6" depth="10" position="8 7 -19.5" src="#Photo" material="" geometry="">
+            </a-plane>
+        
+            <a-plane height="3" width="5" depth="10" position="8 3 -19.5" src="#Photo" material="" geometry="">
+            </a-plane>
+        </a-entity>
+        <a-entity>
+            <a-plane height="6" width="8" depth="10" position="0 6 -19.6" rotation="0 0 0" scale="1 1 1" src="#DemoVideo">
+            </a-plane>
+        
+            <a-text value="DEMO VIDEO" scale="4 4 2" position="-4.146 2.089 -19.600"></a-text>
+        
+            <a-plane height="4.5" width="6" depth="10" position="8 7 -19.5" rotation="0 0 0" scale="1 1 1" src="Photo">
+            </a-plane>
+        
+            <a-plane height="3" width="5" depth="10" position="8 3 -19.5" rotation="0 0 0" scale="1 1 1" src="#Photo">
+            </a-plane>
+        </a-entity>
+        <a-entity position="-5.07017 -0.25895 -14.33116" rotation="0 -90 0">
+            <a-plane height="6" width="8" depth="10" position="0 6 -19.6" src="#pre4" material="" geometry="">
+            </a-plane>
+        
+            <a-text value="VR SESSIONS" scale="4 4 2" position="-4.146 2.089 -19.6" text=""></a-text>
+        
+            <a-plane height="4.5" width="6" depth="10" position="8 7 -19.5" src="#pre3" material="" geometry="">
+            </a-plane>
+        
+            <a-plane height="3" width="5" depth="10" position="8 3 -19.5" src="#pre1" material="" geometry="">
+            </a-plane>
+        </a-entity>
+
+        <!-- room container-->
+        <!-- floor planes-->
+        <a-plane static-body height="10" width="10" depth="10" position="0 0 -5" rotation="-90 0 0" scale="1 1 1"
+            src="#groundt"></a-plane>
+        
+        <a-plane static-body height="10" width="10" depth="10" position="0 0 -15" rotation="-90 0 0" scale="1 1 1"
+            src="#groundt"></a-plane>
+        
+        <a-plane static-body height="10" width="10" depth="10" position="10 0 -5" rotation="-90 0 0" scale="1 1 1"
+            src="#groundt"></a-plane>
+        
+        <a-plane static-body height="10" width="10" depth="10" position="10 0 -15" rotation="-90 0 0" scale="1 1 1"
+            src="#groundt"></a-plane>
+        
+        <a-plane static-body height="10" width="10" depth="10" position="0 0 5" rotation="-90 0 0" scale="1 1 1"
+            src="#groundt"></a-plane>
+        
+        <a-plane static-body height="10" width="10" depth="10" position="10 0 5" rotation="-90 0 0" scale="1 1 1"
+            src="#groundt"></a-plane>
+        
+        <a-entity gltf-model="#Sofa" position="4.522 0.010 -14.186" rotation="0 -90 0" scale="0.090 0.100 0.110"></a-entity>    
+        
+        <a-camera position="0 7.25 -2" class="subm"><a-cursor></a-cursor></a-camera>
+
+        <!--wall Boxes-->
+        <a-box static-body height="10" width="10" depth="0.5" position="0 5 -20" rotation="0 0 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="10" depth="0.5" position="10 5 -20" rotation="0 0 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="10" depth="0.5" position="15 5 -5" rotation="0 90 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="10" depth="0.5" position="15 5 -15" rotation="0 90 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="10" depth="0.5" position="-5 5 -5" rotation="0 90 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="10" depth="0.5" position="-5 5 -15" rotation="0 90 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="10" depth="0.5" position="0 5 0" rotation="0 0 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-box static-body height="10" width="5" depth="0.5" position="13 5 0" rotation="0 0 0" scale="1 1 1"
+            src="#wallt"></a-box>
+        
+        <a-text value="The Team" position="2.89144 8.73401 -0.26169" rotation="0 180 0" scale="5 4 1" text=""></a-text>
+        <a-entity>
+            <a-entity position="0 -0.44 0">
+                <a-plane static-body="" height="10" width="10" depth="10" position="3.15929 7.25335 -0.32497" rotation="0 180 0"
+                    scale="0.18 0.18 0.18" src="#mem2" material="" geometry="">
+                </a-plane>
+                <a-text value="Labanti Purty" position="4.07824 6.05544 -0.26169" rotation="0 180 0" text="">
+                </a-text>
+            </a-entity>
+            <a-entity position="-1.98532 -0.44 0">
+                <a-plane static-body="" height="10" width="10" depth="10" position="3.15929 7.25335 -0.32497" rotation="0 180 0"
+                    scale="0.18 0.18 0.18" src="#mem3" material="" geometry="">
+                </a-plane>
+                <a-text value="Aarushi Johri" position="4.07824 6.05544 -0.26169" rotation="0 180 0" text="">
+                </a-text>
+            </a-entity>
+            <a-entity position="-4.00182 -0.44 0">
+                <a-plane static-body="" height="10" width="10" depth="10" position="3.15929 7.25335 -0.32497" rotation="0 180 0"
+                    scale="0.18 0.18 0.18" src="#mem1" material="" geometry="">
+                </a-plane>
+                <a-text value="Medhavi Singh" position="4.07824 6.05544 -0.26169" rotation="0 180 0" text="">
+                </a-text>
+            </a-entity>
+
+            <a-text value="Our Mentors" position="14.86122 8.73401 -0.26169" rotation="0 180 0" scale="3.4 4 1" text=""></a-text>
+            <a-entity position="9.42463 -0.44 0">
+                <a-plane static-body="" height="10" width="10" depth="10" position="3.15929 7.25335 -0.32497" rotation="0 180 0"
+                    scale="0.18 0.18 0.18" src="#namep" material="" geometry="">
+                </a-plane>
+                <a-text value="DEPARTMENT OF IT-IGDTUW" position="4.07824 6.05544 -0.26169" rotation="0 180 0" text="">
+                </a-text>
+            </a-entity>
+            
+            <a-entity position="9.47906 -3.06865 0">
+                <a-plane static-body="" height="10" width="10" depth="10" position="3.15929 7.25335 -0.32497" rotation="0 180 0"
+                    scale="0.18 0.18 0.18" src="#men3" material="" geometry="">
+                </a-plane>
+                <a-text value="STEAMEDU" position="4.07824 6.05544 -0.26169" rotation="0 180 0" text="">
+                </a-text>
+            </a-entity>
+
+            <!-- movement arrows -->
+            <a-entity class="back" obj-model="obj:#arrow-obj; mtl:#arrow-mtl" position="0 2.25 5" scale="0.1 0.1 0.1"
+                rotation="0 0 90"></a-entity>
+            <a-entity class="front" obj-model="obj:#arrow-obj; mtl:#arrow-mtl" position="0 2.25 3" scale="0.1 0.1 0.1"
+                rotation="0 180 90"></a-entity>
+            <a-entity class="left" obj-model="obj:#arrow-obj; mtl:#arrow-mtl" position="-1 2.25 4" scale="0.1 0.1 0.1"
+                rotation="0 -90 90"></a-entity>
+            <a-entity class="right" obj-model="obj:#arrow-obj; mtl:#arrow-mtl" position="1 2.25 4" scale="0.1 0.1 0.1"
+                rotation="0 90 90"></a-entity>
+
+                
+    </a-scene>
+    
+</body>
+</html>
